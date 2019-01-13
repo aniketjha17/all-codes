@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Writing js</title>
+    <style>
+            #body{
+                background:rgb(255, 185, 80);
+            }
+    </style>
+    <script>
+            function myfunction(){
+                document.getElementById("p1").innerHTML="THe content has been changed";
+            }
+            function myfunction1(){
+                document.getElementById("body").style.background="rgb(80, 220, 255)";
+            }
+            function myfunction2(){
+                document.getElementById("p2").style.display="none";
+            }
+            function myfunction3(){
+                document.getElementById("p2").style.display="block";
+            }
+    </script>
+    <script src="path.js"></script>
+</head>
+<body id="body">
+        <h1>changing the content</h1>
+        <p id="p1">THis will change. </p>
+        <!-- changing the content of html -->
+        <button type="button" onclick='myfunction()'>Click me!</button>
+        <h1>Changing the background</h1>
+        <!-- chnaging the css -->
+        <button type="button" onclick='myfunction1()'>Click me</button>
+        <!-- hiding and diplaying the html content -->
+        <h1>Hiding the content of html</h1>
+        <p id="p2">THis will be hidden</p>
+        <button type="button" onclick='myfunction2()'>Click me to hide</button>
+        <button type="button" onclick='myfunction3()'>Click me to show</button>
+
+        <h1>These changes from another source file</h1>
+        <h1>changing the content</h1>
+        <p id="p3">THis will change. </p>
+        <!-- changing the content of html -->
+        <button type="button" onclick='myfunction4()'>Click me!</button>
+        <h1>Changing the background</h1>
+        <!-- chnaging the css -->
+        <button type="button" onclick='myfunction5()'>Click me</button>
+        <!-- hiding and diplaying the html content -->
+        <h1>Hiding the content of html</h1>
+        <p id="p4">THis will be hidden</p>
+        <button type="button" onclick='myfunction6()'>Click me to hide</button>
+        <button type="button" onclick='myfunction7()'>Click me to show</button>
+
+        
+</body>
+</html>

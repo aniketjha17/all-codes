@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #body{
+            background:rgb(255, 185, 80);
+        }
+        #p3{
+            display: none;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>changing the content</h1>
+    <p id="p1">THis will change. </p>
+    <!-- changing the content of html -->
+    <button type="button" onclick='document.getElementById("p1").innerHTML="THe content has been changed"'>Click me!</button>
+    <h1>Changing the background</h1>
+    <!-- chnaging the css -->
+    <button type="button" onclick='document.getElementById("body").style.background="rgb(80, 220, 255)"'>Click me</button>
+    <!-- hiding and diplaying the html content -->
+    <h1>Hiding the content of html</h1>
+    <p id="p2">THis will be hidden</p><br>
+    <p id="p3">This will appear</p>
+
+    <button type="button" name="abc" class="abc1" onclick="f1()">Click me</button>
+    <!-- <button type="button"  name="abc" class="abc1" onclick='document.getElementById("p2").style.display="block"'>Click me to show</button> -->
+    <script>
+        function f1(){
+            document.getElementById("p2").style.display="none";
+            document.getElementById("p3").style.display="block";
+        }
+    </script>
+</body>
+</html>

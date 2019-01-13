@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to append an item in the body.</p>
+<button type="submit" id="ad">This Is</button>
+
+<script>
+    var btn=document.querySelector("#ad");
+    btn.addEventListener("click",function(){
+    var node1=document.createElement("Ul");
+    var array=["apple","pears","banana"];
+    document.body.appendChild(node1);
+    var q=document.querySelectorAll("Ul");
+    for(var i=0;i<3;i++){
+        var v= document.createElement("Li");
+        node1.appendChild(v);
+        var a=document.createTextNode(array[i]);
+        v.appendChild(a);
+    }
+    console.log(node1);
+});
+</script>
+<p><strong>Note:</strong><br>First create an LI node,<br> then create a Text node,<br> then append the Text node to the LI node.<br>Finally append the LI node to the list.</p>
+
+</body>
+</html>

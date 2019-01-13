@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            border: 2px solid black;
+            height: 50px; 
+        }
+        .progressbar{
+            background: rgb(77, 216, 77);
+            height: 100%;
+            width: 0%;
+            transition: width 10s ease-in ;
+
+        }
+        .wrapper:hover .progressbar{
+            width: 99%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="progressbar"></div>
+    </div>
+</body>
+</html>

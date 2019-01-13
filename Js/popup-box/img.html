@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #body{
+            background:rgb(255, 185, 80);
+        }
+        .wrapper{
+            position: relative;
+            border: 2px solid rgb(197, 16, 16);
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+        button{
+            position: absolute;
+            top: 50%;
+            width: 100px;
+            height: 50px;
+            color: black;
+            background: transparent;
+            border: none;
+            border-bottom-right-radius:100px;
+            border-bottom-left-radius:100px; 
+            border-bottom:200px;
+            transition: visibility 1s;
+        }
+        button:hover{
+            opacity: 0.7;
+            background: rgb(26, 27, 26);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            visibility: visible;
+            border:none;
+        }
+        button:hover b{
+            visibility: visible;
+        }
+        b{
+            visibility: hidden;
+            font-size: 20px;
+        }
+        
+       
+    </style>
+</head>
+<body id="body">
+    
+    <div class="wrapper">
+        <img src="B612_20181103_222425_877.jpg" alt="" srcset="">
+        <form action="el.html" method="post">
+        <button type="submit"><b>Upload</b></button></form>
+    </div>
+
+</body>
+</html>

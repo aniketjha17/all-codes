@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <style>
+        body{
+            margin: 0;
+            background: #232323;
+        }
+        
+        .square{
+            width: 30%;
+            background-color: aqua;
+            padding-bottom: 30%;
+            float: left;
+            margin: 1.66%;
+            border-radius: 30px;
+            transition: background 1s;
+            cursor: pointer;
+        }
+        .container{
+            margin: 30px auto;
+            max-width: 600px;
+        }
+        h1{
+            color: white;
+            text-transform: uppercase;
+            height: 100px;
+            text-align: center;
+        }
+        .stripe{
+            background: white;
+            height: 30px;
+            text-align: center;
+        }
+        .selected{
+            background: #232323;
+        }
+        button{
+            cursor: pointer;
+            height: 100%;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            outline: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        #message{
+            width: 20%;
+            display: inline-block;
+        }
+    
+    </style>
+</head>
+<body>
+   <h1> The <span id="col"></span>  game</h1>
+   <div class="stripe">
+       <button type="submit" id="newGame">New Colors</button>
+       <span id="message"></span>
+       <button id="easy">Easy</button>
+       <button id="hard" class="selected">Hard</button>
+   </div>
+    <div class="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

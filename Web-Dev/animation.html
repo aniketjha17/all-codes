@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .box{
+            /* display: inline-block; */
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background: #aaaa;
+            border-radius: 50%;
+            transition: width 500ms; 
+            transform-origin: top right;
+            transition: transform 1s; 
+            pointer-events: none;  
+        }
+        
+        
+
+        .wrapper:hover .box{
+            
+            transform: rotateX(60deg);
+            
+        }  
+        .wrapper{
+            /* display: inline-block; */
+            position: relative;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 10px solid black;
+        }
+        
+ 
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <button class="box"></button>
+    </div>
+</body>
+</html>
